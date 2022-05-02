@@ -21,3 +21,14 @@ c = collections.Counter()
 for category in categories:
     c[category] += 1
 print(c)
+
+
+table_clients = []
+for item in data_list:
+    client_id = item['client_id']
+    category = item['category']
+    if category == 'table':
+        table_clients.append(client_id)
+print(table_clients)
+
+
