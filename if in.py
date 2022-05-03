@@ -21,3 +21,24 @@ for i in string[string.find('.') + 1:]:
     sum += int(i)
 print(sum)
 
+
+emails_dict = {}
+emails_list = ['vasya@mail.ru',
+          'akakiy@yandex.ru',
+          'spyderman@yandex.ru',
+          'XFiles@gmail.com',
+          'hello@mail.ru',
+          'noname@gmail.com',
+          'DonaldTrump@mail.ru',
+          'a768#af@yandex.ru',
+          'Ivan_Ivanovich@yandex.ru',
+          'thebestmail@yandex.ru']
+for email in emails_list:
+    domain = email[email.find('@')+1:]
+    emails_dict.setdefault(domain, 0)
+    emails_dict[domain] += 1
+print(emails_dict)
+
+
+
+
