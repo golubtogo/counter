@@ -16,3 +16,11 @@ for i in range(0, len(string)):
         string = string.replace(string[i], '_')
 string = string.replace('_', ':)')
 print(string)
+
+
+name = 'Севастиан'
+for letter in name:
+    if letter in ['е', 'а', 'и']:
+        print('"' + letter +' ' + '- глаcная буква"')
+    else:
+        print('"' + letter +' ' + '- согласная буква"')
